@@ -1,0 +1,36 @@
+<form class="col-md-offset-5" name="RegisterForm">
+  <div class="form-group">
+    <label>Nickname</label>
+    <input class="form-control" type="text" ng-model="user.nickname" required>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input class="form-control" type="password" ng-model="user.password" required>
+  </div>
+  <div>
+    <label>Confirm password</label>
+    <input class="form-control" type="password" ng-model="user.confirmPassword" required>
+  </div>
+  <div>
+    <label>Email</label>
+    <input class="form-control" type="email" ng-model="user.email" required>
+  </div>
+  <div>
+    <label>Phone</label>
+    <input class="form-control" type="tel" ng-model="user.phone" required>
+  </div>
+  <div>
+    <label>Country</label>
+    <select class="form-control" name="Countries" ng-model="user.country" required>
+      <option value="Bulgaria">Bulgaria</option>
+      <option value="Tunisia">Tunisia</option>
+      <option value="Vietnam">Vietnam</option>
+      <option value="Israel">Israel</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <button class="btn btn-default" ng-click='Register(user)' ng-disabled="RegisterForm.$invalid">Register</button>
+  </div>
+
+</form>

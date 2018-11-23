@@ -1,0 +1,32 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  background-color: #2b3e50;
+}
+
+form label{
+  color: #ffffff;
+}
+
+.form-control {
+  max-width: 30%;
+}
+
+.changed {
+    max-width: 25%;
+    width: 20% !important;
+}
+
+@media only screen and (min-width: 768px) {
+  #phone {
+    margin-left: 26px;
+  }
+
+  #country {
+    margin-left: 14px;
+  }
+}
+
+.form-inline {
+  margin-top: 1em;
+}

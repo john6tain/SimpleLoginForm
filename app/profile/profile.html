@@ -1,0 +1,40 @@
+<form class="form-inline col-md-offset-4" name="ChangeNicknameForm">
+
+    <div>
+        <label>Nickname:</label>
+        <input class="form-control changed" type="text" ng-model="nickname" placeholder="Nickname" required>
+        <button class="btn btn-default" ng-click="Change(nickname, 'nickname')" ng-disabled="ChangeNicknameForm.$invalid">Change</button>
+        <button class="btn btn-default" ng-click="Clear('nickname')" ng-disabled="ChangeNicknameForm.$invalid">Clear</button>
+    </div>
+</form>
+
+<form class="form-inline col-md-offset-4" name="ChangePasswordForm">
+    <div>
+        <label>Password:</label>
+        <input class="form-control changed" type="password" ng-model="password" placeholder="Password" required>
+        <button class="btn btn-default" ng-click="Change(password, 'password')" ng-disabled="ChangePasswordForm.$invalid">Change</button>
+        <button class="btn btn-default" ng-click="Clear('password')" ng-disabled="ChangePasswordForm.$invalid">Clear</button>
+    </div>
+</form>
+
+<form class="form-inline col-md-offset-4" name="ChangePhoneForm">
+    <div>
+        <label id="phone">Phone:</label>
+        <input class="form-control changed" type="tel" ng-model="phone" placeholder="Phone" required>
+        <button class="btn btn-default" ng-click="Change(phone, 'phone')" ng-disabled="ChangePhoneForm.$invalid">Change</button>
+        <button class="btn btn-default" ng-click="Clear('phone')" ng-disabled="ChangePhoneForm.$invalid">Clear</button>
+    </div>
+</form>
+
+<form class="form-inline col-md-offset-4" name="ChangeCountryForm">
+    <div>
+        <label id='country'>Country:</label>
+        <select class="form-control changed" name="Countries" ng-model="country" required>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Israel">Israel</option>
+        </select>
+        <button class="btn btn-default" ng-click="Change(country, 'country')" ng-disabled="ChangeCountryForm.$invalid">Change</button>
+    </div>
+</form>
